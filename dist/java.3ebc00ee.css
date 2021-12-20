@@ -1,0 +1,298 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: black;
+}
+
+/* button style*/
+button,
+button::after {
+  transition: all 1s;
+}
+
+button {
+  background: none;
+  width: 100px;
+  padding: 10px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 1;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  cursor: pointer;
+}
+
+button::before,
+button::after {
+  background: #fff;
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+  color: #000;
+}
+
+.btn-style1::after {
+  height: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.btn-style1:hover:after {
+  height: 100%;
+}
+
+.btn-style2::after {
+  height: 0;
+  left: 50%;
+  top: 50%;
+  width: 0;
+}
+
+.btn-style2:hover:after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+#wrap {
+  background-color: #171010;
+  width: 1903px;
+  height: 1200px;
+  margin: 0 auto;
+  font-family: "Nanum Gothic", sans-serif;
+  z-index: -10;
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+}
+header .Head a {
+  text-decoration: none;
+  color: white;
+  line-height: 50px;
+}
+header .Head a h1 {
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+header .Head a:hover {
+  color: #171010;
+}
+
+/* content */
+.content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  z-index: -2;
+}
+.content .left_content {
+  order: 1;
+  display: flex;
+  flex-flow: column;
+  width: 20%;
+  background-color: #423F3E;
+  color: white;
+}
+.content .left_content .sidecontent1 {
+  padding-top: 50px;
+  display: block;
+  text-align: center;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+.content .left_content .sidecontent1 h1 {
+  margin: 20px;
+}
+.content .left_content .sidecontent1 .month_select {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+}
+.content .left_content .sidecontent1 .month_select div {
+  box-sizing: border-box;
+  padding: 10px 10px;
+  margin: 2%;
+  width: 29%;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.content .left_content .sidecontent1 .sidecontent2 {
+  padding: 10px 5%;
+  margin-top: 100px;
+}
+.content .left_content .sidecontent1 .sidecontent2 h1 {
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+.content .mainimage {
+  order: 2;
+  width: 60%;
+  height: 1000px;
+  background-color: #423F3E;
+  position: relative;
+  z-index: 0;
+}
+.content .mainimage img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: center;
+  z-index: -1;
+}
+.content .mainimage .area {
+  position: absolute;
+  border: 2px solid #2b2020;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 30px;
+  padding: 10px;
+  color: white;
+  background-color: #2b2020;
+  width: 150px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 20px;
+}
+.content .mainimage .area button {
+  padding: 5px;
+  margin-top: 20px;
+}
+.content .right_content {
+  order: 3;
+  display: flex;
+  flex-flow: column;
+  width: 20%;
+  background-color: #423F3E;
+  color: white;
+}
+
+/* 중앙 이미지  */
+.red {
+  position: absolute;
+  top: 0;
+}
+
+#seoul {
+  top: 50px;
+  left: 450px;
+}
+
+#seoul_red {
+  top: 470px;
+  left: 530px;
+}
+
+#gyeonggi {
+  top: 65px;
+  right: 250px;
+}
+
+#gyeonggi_red {
+  top: 450px;
+  left: 520px;
+}
+
+#chungbuk {
+  top: 50px;
+  left: 200px;
+}
+
+#chungbuk_red {
+  top: 530px;
+  left: 570px;
+}
+
+#chungnam {
+  top: 250px;
+  left: 150px;
+}
+
+#chungnam_red {
+  top: 540px;
+  left: 530px;
+}
+
+#jeollanam {
+  top: 650px;
+  left: 250px;
+}
+
+#jeollanam_red {
+  top: 680px;
+  left: 530px;
+}
+
+#jeollabuk {
+  top: 450px;
+  left: 150px;
+}
+
+#jeollabuk_red {
+  top: 610px;
+  left: 550px;
+}
+
+#gangwon {
+  top: 250px;
+  right: 200px;
+}
+
+#gangwon_red {
+  top: 480px;
+  left: 620px;
+}
+
+#gyeongbuk {
+  right: 200px;
+  top: 450px;
+}
+
+#gyeongbuk_red {
+  top: 560px;
+  left: 630px;
+}
+
+#gyeongnam {
+  top: 650px;
+  right: 300px;
+}
+
+#gyeongnam_red {
+  top: 630px;
+  left: 630px;
+}
+
+line {
+  z-index: 10;
+  position: absolute;
+  left: 100px;
+}
+
+/*# sourceMappingURL=/java.3ebc00ee.css.map */
